@@ -39,7 +39,7 @@ class Parser:
         while True:
             response = self._get(url=url)
             if not response:
-                print(f"[ERROR] :: response: {response} | status: {response.status_code} | url: {url}")
+                print(f"[ERROR] :: response: {response} | url: {url}")
                 continue
             soup = BeautifulSoup(response.text, "lxml")
 
